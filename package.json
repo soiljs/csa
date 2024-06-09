@@ -1,0 +1,47 @@
+{
+  "name": "create-soil",
+  "version": "0.0.1",
+  "description": "A cli tool for creating applications",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "utils",
+    "cli",
+    "vue",
+    "monorepo"
+  ],
+  "author": "Sunny Snow",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soiljs/csa.git"
+  },
+  "bin": {
+    "create-soil": "index.js",
+    "csa": "index.js"
+  },
+  "files": [
+    "index.js",
+    "template-*",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.6",
+    "@types/minimist": "^1.2.5",
+    "@types/prompts": "^2.4.9",
+    "consola": "^3.2.3",
+    "cross-spawn": "^7.0.3",
+    "kolorist": "^1.8.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2",
+    "unbuild": "^2.0.0"
+  },
+  "engines": {
+    "node": "18.0.0 || >= 20.0.0"
+  }
+}
